@@ -17,6 +17,7 @@ secondary color es el lightest one de la palette */
 :root {
   --branding-color: #393e46;
   --secondary-color: #f7f7f7;
+  --third-color: #929aab;
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
 }
@@ -84,7 +85,7 @@ p {
 }
 
 .btn-branding:hover {
-  background-color: #929aab;
+  background-color: var(--third-color);
   color: white;
   font-size: 18px;
   border: none;
@@ -130,8 +131,12 @@ p {
 .social-media {
   color: var(--branding-color);
   font-size: 36px;
+  transition: all 200ms ease-in-out;
 }
-
+.social-media:hover {
+  color: var(--third-color);
+  font-size: 36px;
+}
 .portrait {
   height: 90%;
   width: 60%;
