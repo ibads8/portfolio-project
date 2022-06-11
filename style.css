@@ -40,6 +40,9 @@ h2 {
   font-size: 64px;
   opacity: 0.7;
 }
+h4 {
+  font-size: 48px;
+}
 
 p {
   font-weight: normal;
@@ -128,14 +131,18 @@ p {
   padding: 120px 60px;
 }
 
-.social-media {
+.social-media a {
   color: var(--branding-color);
-  font-size: 36px;
+  font-size: 18px;
   transition: all 200ms ease-in-out;
+  margin: 0 20px;
+  background-color: var(--secondary-color);
+  padding: 10px 14px;
+  border-radius: 50%;
 }
-.social-media:hover {
-  color: var(--third-color);
-  font-size: 36px;
+.social-media a:hover {
+  color: var(--secondary-color);
+  background-color: var(--branding-color);
 }
 .portrait {
   height: 90%;
@@ -157,15 +164,29 @@ footer {
   text-align: center;
 }
 
+footer .contact-box {
+  background-color: var(--secondary-color);
+  padding: 30px;
+  border-radius: 10px;
+}
+footer .contact-box p {
+  margin: 0;
+}
 small {
   text-align: center;
   display: block;
+  margin: 30px 0;
 }
 
 @media (max-width: 960px) {
+  body {
+    margin-top: 50px;
+  }
+
   h1 {
     font-size: 44px;
   }
+
   .hero {
     padding: 50px 0;
   }
